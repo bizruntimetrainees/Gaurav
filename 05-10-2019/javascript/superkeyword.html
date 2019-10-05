@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>Super keyword</title>
+</head>
+<body>
+<script>
+class EmployeeAdd
+{
+   constructor()
+	{
+	   this.address = "from Bangalore";
+	}
+}
+class Employee extends EmployeeAdd
+{
+	constructor(f_name,l_name)
+	{
+         super();
+		this.f_name = "Ankit";
+		this.l_name = "Mishra";
+	}
+}
+  var del = new Employee();
+  document.writeln(del.f_name+" "+del.l_name+" "+del.address+"<br>");
+
+ document.writeln("programm success");
+</script>
+</body>
+</html>
