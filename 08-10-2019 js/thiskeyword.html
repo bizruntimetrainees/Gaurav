@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>this keyword</title>
+ </head>
+ <body>
+  <script>  
+var address=  
+{  
+company:"Bizruntime",  
+city:"Bangalore",  
+state:"karnataka",  
+fullAddress:function()  
+{  
+return this.company+"<br> "+this.city+"<br> "+this.state;  
+}  
+};  
+  
+  
+var fetch=address.fullAddress();  
+document.writeln(fetch);  
+  
+</script>  
+ </body>
+</html>

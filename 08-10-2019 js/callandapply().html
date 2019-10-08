@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  
+  <title>Call() and apply()</title>
+ </head>
+ <body>
+  <script>  
+var emp_address = {  
+    fullAddress: function() {  
+        return this.company + "<br> " + this.city+" <br>"+this.state;  
+    }  
+}  
+var address = {  
+    company:"bizruntime",  
+    city:"bangalore",  
+    state:"karnataka",  
+  
+}  
+  
+document.writeln(emp_address.fullAddress.call(address)+"<br>");   
+document.writeln(emp_address.fullAddress.apply(address));
+</script> 
+ </body>
+</html>

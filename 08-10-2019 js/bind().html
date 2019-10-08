@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang>
+ <head>
+  <title>bind() method</title>
+ </head>
+ <body>
+  <script>  
+var lang="Java";  
+  
+  
+  
+var obj={  
+    
+  lang:"JavaScript",  
+  language:function()  
+  {  
+    document.writeln(this.lang+ " is a popular programming language.<br>");  
+  }  
+};  
+lang_name(obj.language);  
+lang_name(obj.language.bind(obj));  
+</script>  
+ </body>
+</html>
