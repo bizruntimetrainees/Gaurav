@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>using static keyword with more method</title>
+</head>
+<body>
+<script>
+class WithConstructor
+{
+	constructor()
+	{
+		document.writeln(WithConstructor.show()+"<br>");
+		document.writeln(this.constructor.show());
+	}
+	static show()
+	{
+		return "this is static method";
+	}
+	
+}
+   var run = new WithConstructor();
+ 
+</script>
+</body>
+</html>

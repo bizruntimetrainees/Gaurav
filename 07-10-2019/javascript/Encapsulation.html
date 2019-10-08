@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>using encapsulation</title>
+</head>
+<body>
+<script>
+class Encapsulation
+{
+	constructor()
+	{
+		var name;
+		 var marks
+	}
+		getName(name)
+	{
+			return this.name;
+	}
+	setName(name)
+	{
+		this.name = name;
+	}
+	getMarks(marks)
+	{
+		return this.marks;
+	}
+	setMarks(marks)
+	{
+		this.marks = marks;
+	}
+
+}
+  var en = new Encapsulation();
+    en.setName("akshat");
+	en.setMarks(80);
+    document.writeln(en.getName()+"<br>");
+	document.writeln(en.getMarks());
+</script>
+</body>
+</html>

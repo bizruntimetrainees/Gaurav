@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>polymorphism</title>
+</head>
+<body>
+<script>
+class A
+{
+	 
+}
+  A.prototype.message = function()
+  {
+	  return "this is parant class";
+  }
+  class B 
+  {
+    
+  }
+  B.prototype = Object.create(A.prototype)
+   var ex = [new A(),new B()];
+   ex.forEach(function(get)
+   {
+	   document.writeln(get.message()+"<br>");
+   });
+    
+</script>
+</body>
+</html>
