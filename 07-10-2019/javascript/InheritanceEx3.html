@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>Inheritance Example3</title>
+</head>
+<body>
+<script>
+class Bike
+{
+	constructor(company)
+	{
+		this.company = "TVS";
+
+	}
+}
+class DerivedBike extends Bike
+{
+	constructor(name,price)
+	{
+		super();
+		this.name = name;
+		this.price = price;
+	}
+}
+ var show = new DerivedBike("Ignitor",65000);
+  document.writeln("Company name:"+show.company+"<br>Bike name:"+show.name+"<br>Bike price:"+show.price);
+
+</script>
+</body>
+</html>
