@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+    <title>AJAX PAGE</title>
+ </head>
+ <body>
+ <h1>The XML CODE </H2>
+ <p id = "demo">this is the ajax page</p>
+ <button value = "button" onclick="locdoc()">show file</button>
+  <script>
+  function locdoc() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    
+    xhttp = new XMLHttpRequest();
+  } else {
+    
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "http://127.0.0.1:8887/Ajax.txt", true);
+  xhttp.send();
+}
+  </script>
+ </body>
+</html>
