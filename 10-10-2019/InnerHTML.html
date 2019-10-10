@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>InnerHTML</title>
+</head>
+<body>
+<form name="myForm">  
+<input type="button" value="comment" onclick="showCommentForm()">  
+<div id="Text"></div>  
+</form> 
+<script>  
+function showCommentForm() {  
+var data="Name:<br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='comment'>"; 
+          
+		   
+  
+document.getElementById('Text').innerHTML=data;  
+ }  
+  
+</script>   
+</body>
+</html>
+
+ 
