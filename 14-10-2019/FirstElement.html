@@ -1,0 +1,31 @@
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>First Element</title>
+  <style>
+  h1{color:red;}
+  .test{color:green;}
+  p{color:navy}
+  </style>
+ </head>
+ <body>
+  <h1>I m Heading and iI also want to hidden mode</h1><hr>
+  <p class ="test">I m Paragraph ,I will go first only</p><hr>
+  <p>I m last</p><hr>
+  <p>I I m third</p><hr>
+  <p>I m second</p><hr>
+  <p>I m first</p><hr>
+  <h3>Apart from  btn all will be here only</h3><hr>
+  <button style="background-color:black; color:white;">click me to hide</button>
+  <hr>
+  <script>
+  $(document).ready(function()
+  {
+	$("button").click(function()
+	{
+		$("p:first").hide();
+	});
+  });
+  </script>
+ </body>
+</html>

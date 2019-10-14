@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Element Selector</title>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+		
+  });
+  $("#show").click(function(){
+    $("p").show();
+});
+});
+</script>
+</head>
+<body>
+<h1>This is Element Selecgttor</h1>
+<p >If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<button id = "hide">Hide</button>
+<button id = "show">show</button>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>Table</title>
+ </head>
+ <body>
+  <table border=2px>
+  <tr>
+  <th>Name</th>
+  <th>LastName</th>
+  </tr>
+  <tr>
+  <td>Gaurav</td>
+  <td>Mishra</td>
+  </tr>
+  <tr>
+  <td>Raghav</td>
+  <td>Paul</td>
+  </tr>
+  <tr>
+  <td>Mohan</td>
+  <td>Raju</td>
+  </tr>
+  <tr>
+  <td>Mohit</td>
+  <td>Shob</td>
+  </tr>
+  <button style="background-color:black; color:white;">click me to hide</button>
+  </table>
+  <script>
+  $(document).ready(function()
+  {
+	$("button").click(function()
+	{
+		$("tr:odd").css("background-color","red").toggle(1000);
+	});
+	
+  });
+  </script>
+ </body>
+</html>

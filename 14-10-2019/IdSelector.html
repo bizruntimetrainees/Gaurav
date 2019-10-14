@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>ID Selector</title>
+  <style>
+  #text{color:green;}
+  p{color : blue;}
+  </style>
+ </head>
+ <body>
+  <script>
+  $(document).ready(function()
+  {
+	  $("button").click(function()
+	  {
+		$("#text").hide();
+	  });
+	  });
+  </script>
+  <h1>This is ID Selector</h1>
+  <p id ="text">After clicking on i will be hiden mode</p>
+  <p>I will be here only</p>
+  <button style="color:red;">click me to hide</button>
+ </body>
+</html>

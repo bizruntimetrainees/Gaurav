@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>Class Selector</title>
+  <style>
+  .test{color:red;}
+  p{color:navy;}
+  </style>
+ </head>
+ <body>
+  <h1 class = "test">I m Heading and iI also want to hidden mode</h1>
+  <p class ="test">I m Paragraph ,dont worry u also will be on hidden omde</p>
+  <p>I dont want to be hide</p>
+  <hr>
+  <button style="background-color:black; color:white;">click me to hide</button>
+  <script>
+  $(document).ready(function()
+  {
+	$("button").click(function()
+	{
+		$(".test").hide();
+	});
+  });
+  </script>
+ </body>
+</html>

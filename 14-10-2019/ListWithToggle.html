@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>List with toggle</title>
+  <style>
+  .test{color:navy;}
+  ul{color:green;}
+  
+  </style>
+ </head>
+ <body>
+ <div id ="test">
+  <ol class ="test">
+  <li>milk</li>
+  <li>water</li>
+  <li>coldrink</li>
+  </ol><hr>
+  <ul>
+  <li>man</li>
+  <li>woman</li>
+  <li>middleone</li>
+  </ul>
+  </div>
+  <button style="background-color:black; color:white;">click me to hide</button>
+  <hr>
+  <script>
+  $(document).ready(function()
+  {
+	$("button").click(function()
+	{
+		$("#test").toggle(1000);
+	});
+  });
+  </script>
+ </body>
+</html>

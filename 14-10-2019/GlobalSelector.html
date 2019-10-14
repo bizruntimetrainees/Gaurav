@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>Global Selector</title>
+  <style>
+  h1{color:red;}
+  .test{color:green;}
+  p{color:navy}
+  </style>
+ </head>
+ <body>
+  <h1>I m Heading and iI also want to hidden mode</h1><hr>
+  <p class ="test">I m Paragraph ,dont worry u also will be on hidden omde</p><hr>
+  <p>I dont want to be hide</p>
+  <hr>
+  <h3>After click on btn all will be hide</h3><hr>
+  <button style="background-color:black; color:white;">click me to hide</button>
+  <hr>
+  <script>
+  $(document).ready(function()
+  {
+	$("button").click(function()
+	{
+		$("*").hide();
+	});
+  });
+  </script>
+ </body>
+</html>

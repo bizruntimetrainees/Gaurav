@@ -1,0 +1,34 @@
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>List Element</title>
+  <style>
+  ul{color:red;}
+  .test{color:green;}
+  p{color:navy}
+  </style>
+ </head>
+ <body>
+  <ol class ="test">
+  <li>milk</li>
+  <li>water</li>
+  <li>coldrink</li>
+  </ol><hr>
+  <ul>
+  <li>man</li>
+  <li>woman</li>
+  <li>middleone</li>
+  </ul>
+  <button style="background-color:black; color:white;">click me to hide</button>
+  <hr>
+  <script>
+  $(document).ready(function()
+  {
+	$("button").click(function()
+	{
+		$("ul li:first").hide();
+	});
+  });
+  </script>
+ </body>
+</html>
