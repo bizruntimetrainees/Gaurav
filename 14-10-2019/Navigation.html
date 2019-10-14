@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navigate</title>
+<body>
+<h1>The XML PAGE
+<div id='show'></div><br>
+<input type="button" onclick="previous()" value="<<">
+<input type="button" onclick="next()" value=">>">
+
+<script>
+var i = 0, len;
+display(i);
+
+function display(i) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this, i);
+    }
+  };
+  xmlhttp.open("GET", "http://192.168.1.35:8887//List.xml", true);
+  xmlhttp.send();
+}
+
+function myFunction(xml, i) {
+  var xmlDoc = xml.responseXML; 
+  x = xmlDoc.getElementsByTagName("information");
+  len = x.length;
+  document.getElementById("show").innerHTML =
+  "C#: " +
+  x[i].getElementsByTagName("C#")[0].childNodes[0].nodeValue +
+  "<br>Name: " +
+  x[i].getElementsByTagName("JavaScript")[0].childNodes[0].nodeValue +
+  "<br>topic: " + 
+  x[i].getElementsByTagName("CSS")[0].childNodes[0].nodeValue;
+}
+
+function next() {
+  if (i < len-1) {
+    i++;
+    display(i);
+  }
+}
+
+function previous() {
+  if (i > 0) {
+    i--;
+    display(i);
+  }
+}
+</script>
+
+</body>
+</html>

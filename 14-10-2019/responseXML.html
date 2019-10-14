@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+ <head>
+  <title>ResponseXML</title>
+ </head>
+ <body>
+  <h1>This is ResponseXML Property</h1>
+  <p id="demo"></p>
+  
+  <script>
+  
+	var xhttp,txt,xmldoc,x,i;
+	xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function()
+	{
+		if(this.readystate==4 || this.status==200)
+		{
+			xmldoc = this.responseXML;
+			txt = "";
+			x = xmldoc.getElementByTagName("List");
+			for(i=0;i<x.length;i++)
+			{
+				txt = txt+x[i].childNodes[0].nodeValue + "<br>"
+			}
+              document.getElementById("demo").innerHTML = txt;
+		}
+	};
+	xhttp.open("GET","http://http://192.168.1.35:8887//List.txt",true);
+	xhttp.send();
+  
+  </script>
+ </body>
+</html>
