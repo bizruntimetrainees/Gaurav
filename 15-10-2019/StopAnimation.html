@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>stop Animate</title>
+  <script>
+  $(document).ready(function(){
+  $("#b1").click(function(){
+    $("div").slideDown(5000);
+    
+  });
+  $("#b2").click(function(){
+    $("div").stop();
+	});
+    
+});
+  </script>
+ </head>
+ <body>
+ <button style="background-color:black; color:white;" id="b1">click me to slide</button>
+ <button style="background-color:black; color:white;"id="b2">stop sliding</button>
+
+ <div style="color:red;">
+ Hi i m going to be slide dont stop me ok!
+  </div>
+  
+ </body>
+</html>

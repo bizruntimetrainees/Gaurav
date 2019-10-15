@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+ <script src="jquery-3.4.1.min.js"></script>
+  <title>Call Back function</title>
+  <script>
+  $(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#t1").text(function(i,origText){
+		return "older text: "+origText+ " New Text: this is new text!";
+    });
+  });
+  $("#btn2").click(function(){
+    $("#t2").html(function(i,origText){
+		return "older text: " + origText +  " New Text: this is new HTML TEXT!";
+    });
+  });
+  
+});
+  </script>
+ </head>
+ <body>
+  <h1 id="t1">Hello</h1>
+  <h2 id ="t2">Html</h2>
+  
+  
+  <button id="btn1">show text</button>
+  <button id="btn2">show html</button>
+ </body>
+</html>

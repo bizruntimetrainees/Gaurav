@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>Animate</title>
+  <script>
+  $(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({left: '300px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+    
+  });
+});
+  </script>
+ </head>
+ <body>
+ <button style="background-color:black; color:white;">click me to Fade</button>
+ <div style="background:#98bf21;height:100px;width:100px;position:absolute;">Gaurav Mishra
+  </div>
+ </body>
+</html>

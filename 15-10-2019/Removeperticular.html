@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Remove And Empty method</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("p").remove(".test");
+		});
+	});
+  </script>
+ </head>
+ <body>
+  <div id="div1" style="border:2px;background-color:yellow;text-color:blue;width:200px;height:100px;">
+  <p class="test">this is insiode div1</p>
+  <p class="test">this is insiode div1</p>
+  <p>this is insiode div</p>
+  </div><br>
+  
+  <button id="btn1">clear 1</button>
+  
+ </body>
+</html>

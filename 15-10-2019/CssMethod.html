@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+ <head>
+  <title>CSS Method</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			alert("background-color="+ $("p").css("background-color"));
+		});
+	});
+  </script>
+ </head>
+ <body>
+  <p style="background-color:#ff0000;">these all are blue</p>
+  <p style="background-color:#00ff00;">these all are blue</p>
+  <p style="background-color:#0000ff;">these all are blue</p><br>
+  <button id="btn1">click to know</button>
+ </body>
+</html>

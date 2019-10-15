@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Append method</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script>
+  $(document).ready(function(){
+	$("#btn1").click(function(){
+		$("#p1").prepend(" this is new prepend <br>");
+	});
+	$("#btn2").click(function(){
+		$("#l").prepend("<li>prepend list</li>");
+	});
+  });
+  </script>
+ </head>
+ <body>
+  <p id ="p1">this is paragraph</p><br>
+  <ol id="l">
+  <li>Hello</li>
+  <li>Gaurav</li>
+  <li>Mishra</li>
+  </ol>
+  <button id="btn1">Append text</button>
+  <button id="btn2">Append list</button>
+ </body>
+</html>

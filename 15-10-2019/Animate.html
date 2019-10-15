@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>Animate</title>
+  <script>
+  $(document).ready(function(){
+  $("button").click(function(){
+    $(".div1").animate({left: '250px'});
+  });
+});
+  </script>
+ </head>
+ <body>
+ <button style="background-color:black; color:white;">click me to Fade</button>
+ <div class="div1" style="color:red;">
+  <p>This is div to Animation</p>
+  </div>
+ </body>
+</html>

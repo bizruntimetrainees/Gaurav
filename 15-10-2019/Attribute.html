@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>get attribute</title>
+  <script>
+	$(document).ready(function(){
+  $("#btn1").click(function(){
+	
+
+		alert("Value: " + $("#t1").attr("name"));
+	
+  });
+});
+  </script>
+ </head>
+ <body>
+ <input type="text" id="t1" name="text">
+ <button id="btn1">get</button>
+ </body>
+</html>

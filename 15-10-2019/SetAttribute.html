@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+ <script src="jquery-3.4.1.min.js"></script>
+  <title>Set Attribute</title>
+  <script>
+  $(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#t1").text("this is text!");
+  });
+  $("#btn2").click(function(){
+    $("#t2").html("<b>this is html</b>");
+  });
+  $("#btn3").click(function(){
+    $("#t3").val("after change");
+  });
+});
+  </script>
+ </head>
+ <body>
+  <h1 id="t1">Hello</h1>
+  <h2 id ="t2">Html</h2>
+  text:<input type="text" id="t3" value="changeable"><br>
+  <button id="btn1">text</button>
+  <button id="btn2">html</button>
+  <button id="btn3">value</button>
+ </body>
+</html>

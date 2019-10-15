@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>Text method</title>
+  <script>
+	$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#t1").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#t2").html());
+  });
+});
+  </script>
+ </head>
+ <body>
+ <button id="btn1">show text</button>
+ <button id="btn2">show html</button>
+  <p id = "t1">this a text to show</p>
+  <p id = "t2">thism sis html to show</p>
+ </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ <head>
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>without CallBack</title>
+  <script>
+  $(document).ready(function()
+  {
+	$("button").click(function()
+	{
+		$("tr:even").css("background-color","red").toggle();
+			alert("operation is completed is hided..");
+			
+	});
+	
+  });
+  </script>
+ </head>
+ <body>
+ <button style="background-color:black; color:white;">click me to hide</button>
+ <div>
+  <table border=2px>
+  <tr>
+  <th>Name</th>
+  <th>LastName</th>
+  </tr>
+  <tr>
+  <td>Gaurav</td>
+  <td>Mishra</td>
+  </tr>
+  <tr>
+  <td>Raghav</td>
+  <td>Paul</td>
+  </tr>
+  <tr>
+  <td>Mohan</td>
+  <td>Raju</td>
+  </tr>
+  <tr>
+  <td>Mohit</td>
+  <td>Shob</td>
+  </tr>
+  </table>
+  </div>
+ </body>
+</html>
