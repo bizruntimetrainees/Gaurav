@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://192.168.1.35:8887//List.txt",function(data,status){
+		alert("Data :"+data+"\nstatus"+status)
+		});
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>JQuery With AJAX</h2></div>
+
+<button>Get Data</button>
+
+</body>
+</html>
