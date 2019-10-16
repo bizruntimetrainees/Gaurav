@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Treversing</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <style>
+  .div1
+  {
+    display:block;
+	border:2px solid lightgrey;
+	color:lightgrey;
+	padding:5px;
+	margin:15px;
+
+  }
+  </style>
+  <script>
+  $(document).ready(function(){
+  $("span").parent().css({"color": "red", "border": "2px solid red"});
+});
+  </script>
+ </head>
+ <body>
+  <div class="div1">
+  <div style="width:500px">div (great grandparent)
+  <ul> ul parent
+  <li> li parent
+  <span>span</span>
+  </li>
+  </ul>
+  </div>
+  
+  <div style="width:500px"> div grand parent
+  <p>direct parent
+  <span>span</span>
+  </p>
+  </div>
+  </div>
+ </body>
+</html>

@@ -6,7 +6,13 @@
   <script>
   $(document).ready(function()
   {
-	$("button").click(function()
+	$("#btn1").click(function()
+	{
+		$("tr:even").css("background-color","red").toggle();
+			alert("operation is completed is hided..");
+			
+	});
+	$("#btn2").click(function()
 	{
 		$("tr:even").css("background-color","red").toggle();
 			alert("operation is completed is hided..");
@@ -17,7 +23,8 @@
   </script>
  </head>
  <body>
- <button style="background-color:black; color:white;">click me to hide</button>
+ <button style="background-color:black; color:white;" id="btn1">click me to hide</button>
+ <button style="background-color:black; color:white;" id="btn2">click me to hide</button>
  <div>
   <table border=2px>
   <tr>

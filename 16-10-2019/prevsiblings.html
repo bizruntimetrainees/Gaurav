@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>prev siblings</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <style>
+  .div1
+  {
+    display:block;
+	border:2px solid lightgrey;
+	color:lightgrey;
+	padding:5px;
+	margin:15px;
+
+  }
+  </style>
+  <script>
+  $(document).ready(function(){
+  $("h1").prev().css({"color": "red", "border": "2px solid red"});
+});
+  </script>
+ </head>
+ <body>
+  <div class="div1">
+
+  <p>p</p>
+
+  <span>span</span>
+
+  <h1>h1</h1>
+
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+
+  <p>plast</p>
+
+  </div>
+ </body>
+</html>
