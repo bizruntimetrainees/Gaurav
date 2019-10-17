@@ -1,0 +1,10 @@
+let val : any="gaurav";
+console.log(val);
+val = 254;
+console.log(val);
+val=true;
+console.log(val);
+val=21.00;
+console.log(val);
+val = 0o254;
+console.log(val);
