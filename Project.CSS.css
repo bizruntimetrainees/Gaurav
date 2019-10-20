@@ -1,0 +1,29 @@
+#d1
+{
+    background-color:black;
+}
+
+.b1:hover
+{
+  background-color:yellow;
+  color:white;
+}
+.b2:hover
+{
+  background-color:red;
+  color:white
+}
+.b3:hover
+{
+  background-color:orange;
+  color:white
+}
+#A1:hover
+{
+  background-color:blue;
+}
+#lab
+{
+  font-size: 15px;
+}
+

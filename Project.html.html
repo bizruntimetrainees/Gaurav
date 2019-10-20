@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Project</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="Project.CSS.css">
+  <script src="project.JS.js"></script>>
+  
+  
+ </head>
+ 
+ <body style="background-color:lightblue;">
+ <h2 style="color:black;">PostMan Echo<h2>
+  <div id="d1">
+  <button  class = "b1" style="margin-right:40px;" >CRUD</button>
+  <button  class = "b2">Headers</button>
+  <button  class = "b3" style="margin-left:40px;">Authentication</button><br>
+  </div><hr>
+ <div class="div1">
+ <button style="width:101px" class ="get1" id="A1">Get</button>
+  <button class="plus1" onclick="upload()" id="A1">+</button>
+  <input type="text" value="foo1" name="text1" class="gettxt1">
+  <input type="text" value="foo2" name="text1" class="gettxt2">
+  <br>
+ <button style="width:101px" id="A1" class="post1">Post </button>
+ <input type="text" value="text" name="text" class="posttxt"><br>
+
+ <button id="A1" class="postdata">PostFormData</button>
+ <button id="A1" class="postfrmget">+</button>
+  <input type="text" value="foo1" name="text" class="postfrmtxt1">
+  <input type="text" value="foo2" name="text" class="postfrmtxt2"><br>
+
+ <button style="width:101px; "id="A1" class="put">Put </button>
+ <input type="text" value="text" name="text" class="puttxt"><br>
+
+ <button style="width:101px;"id="A1" class="patch"> Patch </button>
+ <input type="text" value="text" name="text" class="patchtxt"><br>
+
+ <button style="width:101px; "id="A1" class="delete">Delete</button>
+ <input type="text" value="text" name="text" class="deletetxt"><br>
+ </div>
+ <div id="r" class="childhdr">
+ <button id="A1" class="rqsthdr">Request Header</button>
+ <button id="A1" >Response Header</button><br>
+ <button id="A1" class="subrqst">+</button>
+        <input type="text" value="foo1" name="text" class="foo1">
+        <input type="text" value="foo2" name="text" class="foo2">
+         <button id="A1" class="sub">Submit</button>
+ </div>
+ <div >
+        
+ </div>
+ <div class="val">
+<button id="A1" class="Auth">Basic Auth</button><br>
+<div class="label">
+<label id="lab">UserName:</label>
+  <input type="username" placeholder="Enter username.." name="username" required><br>
+  <label id="lab">Password:</label>
+  <input type="password" placeholder="Enter password.." name="username" required><br>
+ <button id="A1">Submit</button>
+ </div>
+ </div>
+ </body>
+</html>
