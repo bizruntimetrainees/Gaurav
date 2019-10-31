@@ -9,9 +9,9 @@ namespace _17_10_2019
     
         class AsyncExample2
     {
-        public  async Task CallMethod1()
+        public   async Task CallMethod1()
         {
-            await ProgramRun();
+             ProgramRun();
             Console.WriteLine("Time Consuming Process end");
         }
 
@@ -21,7 +21,7 @@ namespace _17_10_2019
             Console.WriteLine("Program execution completed");
         }
 
-        public static  Task ProgramRun()
+        public   Task ProgramRun()
         {
             return Task.Run(() =>
             {
@@ -30,9 +30,9 @@ namespace _17_10_2019
         }
         static void Main(string[] args)
             {
-            AsyncExample2 As = new AsyncExample2();
+            AsyncExample2 AE = new AsyncExample2();
 
-             As.CallMe();
+            AE.CallMe();
 
         }
         }
