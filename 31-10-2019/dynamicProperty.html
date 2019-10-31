@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dynamic Property</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+ </head>
+ <body>
+  <p>error: <h1>this is an error occured</h1></p>
+  <p>warning: <h2>this is a warnig for u</h2></p>
+  <script>
+      d3.select("body")
+      .selectAll("p")
+      .style("color",function(d,i)
+      {
+          var text = this.innerText;
+
+          if(text.indexOf("error")>=0)
+          {
+              return "red";
+          }
+          else if(text.indexOf("warning")>=0)
+          {
+              return "green";
+          }
+      });
+  </script>
+ </body>
+</html>

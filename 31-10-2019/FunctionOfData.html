@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Function of Data</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+ </head>
+ <body>
+  <p></p><hr>
+  <p></p><hr>
+  <p></p><hr>
+  <p></p><hr>
+  <script>
+      var nums=[10,20,30,40];
+    d3.select("body")
+    .selectAll("p")
+    .data(nums)
+    .text(function(d,i)
+    {
+       console.log("d :"+d);
+       console.log("i :"+i);
+       console.log("this :"+this);
+
+       return d;
+
+    });
+  </script>
+ </body>
+</html>

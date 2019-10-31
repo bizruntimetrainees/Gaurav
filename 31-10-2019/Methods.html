@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Text Method</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+      .error
+      {
+          color:brown;
+      }
+  </style>
+ </head>
+ <body>
+  <h1></h1>
+  <hr>
+  <div></div>
+  <hr>
+  <p></p>
+  <hr>
+  <h4>this is a simple paragraph</h4>
+  <hr>
+  <script>
+      
+      d3.select("h1").text("This is filled by d3 Text method").style("color","blue");
+
+      d3.select("body").append("h2").text("This is h2 tag selected by d3 object").style("color","red");
+
+      d3.select("div").insert("h3").text("This is inside div tag append by d3 object").style("color","yellow");
+
+      d3.select("p").html("<span>hey this append by html method</span><hr>").style("color","lightblue");
+      
+      d3.select("h4").attr("class","error");
+
+      
+  </script>
+ </body>
+</html>

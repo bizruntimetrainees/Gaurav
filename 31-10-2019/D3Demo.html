@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>D3 page</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+ </head>
+ <body>
+  <h1>Welcome to the world of D3 JS</h1>
+  <ul></ul>
+  <svg width="400px" height="400px" fill="red"></svg>
+
+  <script>
+      heros=["Gaurav","Mishra","Rohit","Raghav","Ankit"];
+
+      d3.select("h1").style("font-size","50px");
+      d3.select("ul")
+      .selectAll("li")
+      .data(heros)
+      .enter()
+      .append("li")
+      .text(hero => hero);
+
+      var numbers=[50,20,100,80,90,110,40200];
+      var barheight = 40;
+       
+      d3.select("svg")
+      .selectAll("rect")
+      .data(numbers)
+      .enter()
+      .append("rect")
+      .attr("width",d => d)
+      .attr("height",barheight-4)
+      .attr('transform',(d,i) => "translate(100 "+ i * barheight +")");
+      
+  </script>
+ </body>
+</html>
