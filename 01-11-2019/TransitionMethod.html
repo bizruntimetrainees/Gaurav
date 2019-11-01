@@ -1,0 +1,26 @@
+<doctype html>
+    <html>
+        <head>
+            <title>Transition Method </title>
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+             <style>
+                       #container
+                       {
+                           height :100px;
+                           width  :100px;
+                           background-color: black;
+                       }
+             </style>
+        </head>
+        <body>
+            <div id="container"></div>
+            <script>
+                var t = d3.transition()
+                          .duration(5000);
+
+                d3.select("#container")
+                  .transition(t)
+                  .style("background-color","red");
+            </script>
+        </body>
+    </html>

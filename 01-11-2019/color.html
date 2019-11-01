@@ -1,0 +1,40 @@
+<doctype html>
+        <html>
+            <head>
+                <title>changing Colors </title>
+                <script src="https://d3js.org/d3.v4.min.js"></script>
+                 <style>
+                           h1:hover {
+                                       background-color: yellow;
+                                       
+                                   }
+                 </style>
+            </head>
+            <body>
+            <h1>Colors</h1> <hr>
+                <script>
+                      var color = d3.color("red");
+
+                      console.log(color);
+                      console.log(color.opacity);
+                      console.log(color.rgb()); 
+                      console.log(color.toString());
+                      console.log(color.displayable());
+                      console.log(d3.rgb("yellow"));
+                      console.log(d3.rgb(100,200,0));
+
+                      var hsl = d3.hsl("orange");
+                      console.log(hsl.h += 90);
+                      console.log(hsl.opacity = 0.5);
+
+                      var lab = d3.lab("green");
+                      console.log(lab);
+
+                      var hcl = d3.hcl("green");
+                      console.log(hcl);
+
+                      var cube = d3.cubehelix("blue");
+                      console.log(cube);  
+                </script>
+            </body>
+        </html>

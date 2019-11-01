@@ -1,0 +1,53 @@
+<doctype html>
+        <html>
+            <head>
+                <title>Array Transformation </title>
+                <script src="https://d3js.org/d3.v4.min.js"></script>
+                 <style>
+                     svg text
+                     {
+                       fill: red;
+                       font :12px ;
+                       text-anchor: end;
+                     }      
+                 </style>
+            </head>
+            <body>
+               <h1>Array Axis </h1><hr>
+                <script>
+                     var width =400 , height = 400;
+                     var data = [10,20,30,40,50,60,70,80,90,100];
+
+                     var svg = d3.select("body")
+                                 .append("svg")
+                                 .attr("width",width)
+                                 .attr("height",height);
+
+                    var xscale = d3.scaleLinear()
+                                   .domain([0,d3.max(data)])
+                                   .range([0,width-100]);
+
+                     var yscale = d3.scaleLinear()
+                                   .domain([0,d3.max(data)])
+                                   .range([height/2,0]);
+                 
+                 var x_axis = d3.axisBottom().scale(xscale);
+
+                 var y_axis = d3.axisLeft().scale(yscale);
+
+                 svg.append("g")
+                     .attr("transform","translate(50,10)")
+                     .call(y_axis);
+
+                var xAxistranslate = height/2 +10;
+
+                svg.append("g")
+                    .attr("transform", "translate(50,"+xAxistranslate+")")
+                    .call(x_axis)
+                
+
+
+                     
+                </script>
+            </body>
+        </html>

@@ -1,0 +1,24 @@
+<doctype html>
+        <html>
+            <head>
+                <title>Array Transformation </title>
+                <script src="https://d3js.org/d3.v4.min.js"></script>
+                 <style>
+                           
+                 </style>
+            </head>
+            <body>
+               <p>Array Transformation <b>please check on console</b></p><hr>
+                <script>
+                      console.log(d3.cross([10,20],[50,70]));
+                      console.log(d3.merge([[20],[30]]));
+                      console.log(d3.pairs([10,20,30,40]));
+
+                      var objects = {fruit :"mango",color : "black"};
+                      fields = ["fruit","color"];
+                      console.log(d3.permute(objects,fields));
+                      console.log(d3.zip([10,20],[30,40]));
+                     
+                </script>
+            </body>
+        </html>

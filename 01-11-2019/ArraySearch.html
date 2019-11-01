@@ -1,0 +1,21 @@
+<doctype html>
+        <html>
+            <head>
+                <title>Array Statistics </title>
+                <script src="https://d3js.org/d3.v4.min.js"></script>
+                 <style>
+                           
+                 </style>
+            </head>
+            <body>
+               <p>Array Search <b>please check on console</b></p><hr>
+                <script>
+                      var array = [{one : 1},{one:10}];
+
+                      console.log("index :"+d3.scan(array,function(a,b) {return a.one -b.one}));
+                      console.log("index :"+d3.scan(array,function(a,b) {return b.one -a.one}));
+
+                     
+                </script>
+            </body>
+        </html>
