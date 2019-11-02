@@ -9,7 +9,7 @@ export const Guests: First[] = [
     { id: 16, name: 'Girija' },
     { id: 17, name: 'Geeta' },
     { id: 18, name: 'Malti' },
-    { id: 19, name: 'Seema' },
+    { id: 19, name: 'Gaurav' },
     { id: 20, name: 'Mukesh' },
     { id: 20, name: 'Avdesh' },
     { id: 20, name: 'Meera' },
