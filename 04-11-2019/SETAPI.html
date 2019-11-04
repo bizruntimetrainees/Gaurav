@@ -1,0 +1,23 @@
+<doctype html>
+        <html>
+            <head>
+                    <script src="https://d3js.org/d3.v4.js"></script>
+            </head>
+            <body>
+                    <h1>D3 Collection API </h1><hr>
+                    <p>Please check in console..</p>
+                     <script>
+                
+                           var names = d3.set()
+                                         .add('Gaurav')
+                                         .add('Mohit')
+                                         .add('Solanki')
+                                       
+                           console.log(names.has('Mohit'));
+                           console.log("value successfully removed:"+names.remove('Solanki'));
+                           console.log(names.size());
+                           console.log(names.empty());
+                        
+                         </script>
+             </body>
+        </html>

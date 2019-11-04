@@ -1,0 +1,25 @@
+<doctype html>
+        <html>
+            <head>
+                       <script src="https://d3js.org/d3.v4.js"></script>
+            </head>
+       
+                <body>
+                        <svg width=400px height=400px id="svgselect"></svg>
+                        <script>
+                                 var mycircle = d3.select("#svgselect")
+                                                  .append("svg")
+                                                  .append("circle")
+                                                  .attr("cx",100)
+                                                  .attr("cy",100)
+                                                  .attr("r",70)
+                                                  .attr("fill","red");
+                                       d3.select("#svgselect")
+                                         .call(d3.brushY()
+                                         .extent([[0,100],[400,400]])
+                                         )
+       
+                       </script>
+                </body>
+            </head>
+        </html>

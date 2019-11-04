@@ -1,0 +1,31 @@
+<doctype html>
+        <html>
+            <head>
+                    <script src="https://d3js.org/d3.v4.js"></script>
+            </head>
+            <body>
+                    <h1>D3 Collection API </h1><hr>
+                    <p>Please check in console..</p>
+                     <script>
+                          
+                           var month = d3.map([{name : "Gaurav"},{id:25487}],
+                           function(d)
+                           {
+                               return (d.name, d.id);
+                               
+                           })
+
+                           console.log(month.get(name));
+                           console.log(month.get(25487));
+                           console.log(month.get("Rohit"));
+                           console.log(month.has(25487));
+
+                           var map = d3.map().set('fruit','orange');
+                           console.log(map.get('fruit'));
+                           console.log(map.remove('fruit'));
+                           console.log(map.size());
+                           console.log(map.empty());
+                        
+                         </script>
+             </body>
+        </html>

@@ -1,0 +1,18 @@
+<doctype html>
+    <html>
+        <head>
+                <script src="https://d3js.org/d3.v4.js"></script>
+        </head>
+        <body>
+                 <script>
+                       d3.csv("D:\\Gaurav\\bizruntime\\CSV.csv",function(data)
+                       {
+                           for(var i=0;i<data.length;i++)
+                           {
+                               document.write(data[i].Id);
+                               document.write(data[i].Name);
+                           }
+                       })
+                     </script>
+         </body>
+    </html>
