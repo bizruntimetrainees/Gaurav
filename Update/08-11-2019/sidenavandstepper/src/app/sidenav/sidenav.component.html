@@ -1,0 +1,35 @@
+
+<mat-sidenav-container class="container" *ngIf="shouldRun">
+        <mat-sidenav #sidenav [mode]="mode.value">
+          <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+          <p>
+            <mat-radio-group class="example-radio-group" [formControl]="mode">
+              <label>Mode:</label>
+              <mat-radio-button value="over">Over</mat-radio-button>
+              <mat-radio-button value="side">Side</mat-radio-button>
+              <mat-radio-button value="push">Push</mat-radio-button>
+            </mat-radio-group>
+          </p>
+        </mat-sidenav>
+      
+        <mat-sidenav-content>
+          <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+          <p>
+            <mat-radio-group class="example-radio-group" [formControl]="mode">
+              <label>Mode:</label>
+              <mat-radio-button value="over">Over</mat-radio-button>
+              <mat-radio-button value="side">Side</mat-radio-button>
+              <mat-radio-button value="push">Push</mat-radio-button>
+            </mat-radio-group>
+          </p>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+
+      <mat-grid-list cols="4" rowHeight="2:1">
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+          </mat-grid-list>
+      
+      
