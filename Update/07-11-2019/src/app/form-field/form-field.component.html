@@ -1,0 +1,69 @@
+<div>
+    <form [formGroup]="options">
+        <mat-checkbox formControlName="hideRequired">Hide Required Marker</mat-checkbox><br>
+        <div>
+            <label>Float label: </label><br>
+            <mat-radio-group formControlName="floatLabel">
+                <mat-radio-button value="auto">Auto</mat-radio-button><br>
+                <mat-radio-button value="always">Always</mat-radio-button><br>
+                <mat-radio-button value="never">Never</mat-radio-button><br>
+                </mat-radio-group>
+                </div>
+                </form>
+
+                <mat-form-field [hideRequiredMarker]="options.value.hideRequired"
+                                [floatLabel]="options.value.floatLabel" hintLabel="Max 10 characters">
+                <input matInput placeholder="simple placeholder" required>
+                
+                </mat-form-field><br>
+
+                <mat-form-field [floatLabel]="options.value.floatLabel">
+                <mat-label>Both a label and a placeholder</mat-label>
+                <input matInput placeholder="simple placeholder">
+                </mat-form-field><br>
+
+                <mat-form-field [hideRequiredMarker]="options.value.hideRequired"
+                                [floatLabel]="options.value.floatLabel">
+                <mat-select required>
+                    <mat-option >--None--</mat-option>
+                    <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                    <mat-label><mat-icon>favorite</mat-icon><b>fancy</b><i>label</i></mat-label>
+                    </mat-form-field>
+             </div>
+
+        <mat-form-field>
+          <input matInput placeholder="Enter your email" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <div class="example-container">
+                <mat-form-field>
+                  <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                </mat-form-field><br>
+              
+                <mat-form-field>
+                  <input matInput placeholder="Amount" type="number" class="example-right-align">
+                  <span matPrefix>$&nbsp;</span>
+                  <span matSuffix>.00</span>
+                </mat-form-field>
+              </div>
+        
+              <form class="example-container" [formGroup]="options" [style.fontSize.px]="getFontSize()">
+                    <mat-form-field [color]="options.value.color">
+                      <mat-select placeholder="Color" formControlName="color">
+                        <mat-option value="primary">Primary</mat-option>
+                        <mat-option value="accent">Accent</mat-option>
+                        <mat-option value="warn">Warn</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field [color]="options.value.color">
+                      <input matInput type="number" placeholder="Font size (px)" formControlName="fontSize" min="10">
+                      <mat-error *ngIf="options.get('fontSize')?.invalid">Min size: 10px</mat-error>
+                    </mat-form-field>
+                  </form>
+      

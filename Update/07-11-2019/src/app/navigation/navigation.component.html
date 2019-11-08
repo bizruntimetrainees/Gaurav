@@ -1,0 +1,26 @@
+<div style="border: solid black; background-color: cornflowerblue;">
+        <button mat-button [matMenuTriggerFor]="Grand">Family</button>
+
+        <mat-menu #Grand="matMenu" style="background-color: crimson;">
+          <button mat-menu-item [matMenuTriggerFor]="GrandFather">RamPrakash</button>
+          <button mat-menu-item >Rambeti</button>
+        </mat-menu>
+        
+        <mat-menu #GrandFather="matMenu" style="background-color: darkgoldenrod;">
+          <button mat-menu-item [matMenuTriggerFor]="son1">Rishikesh</button>
+          <button mat-menu-item [matMenuTriggerFor]="son2">Ramkishor</button>
+          <button mat-menu-item >Geeta</button>
+          <button mat-menu-item >Sharda</button>
+          <button mat-menu-item >Girija</button>
+        </mat-menu>
+        
+        <mat-menu #son1="matMenu" style="background-color: darkgreen;">
+          <button mat-menu-item>Amit</button>
+          <button mat-menu-item>Gaurav</button>
+          <button mat-menu-item>Pallavi</button>
+        </mat-menu>
+        <mat-menu #son2="matMenu" style="background-color: darkorchid;">
+          <button mat-menu-item>Samar</button>
+          <button mat-menu-item>Ronak</button>
+        </mat-menu>
+    </div>
